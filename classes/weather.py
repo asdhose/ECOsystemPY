@@ -11,3 +11,5 @@ class Weather:
         self.Temperature += random(0,3)
         self.Rain = True if random(1,10) > 5 else False
         self.Sunny= True if random(1,10) > 5 else False
+        new_weather = [self.Temperature, self.Rain, self.Sunny]
+        return new_weather
