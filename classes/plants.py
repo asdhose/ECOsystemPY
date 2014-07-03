@@ -9,27 +9,13 @@ class BasePlant(Beings):
         self.Weather_max = 40
         self.Max_age = 100
 
-    def process_weather(self,weather):
-        temp = weather[0]
-        rain = weather[1]
-        sunny = weather[2]
-        if temp < self.Weather_min or temp > self.Weather_max:
-            self.Vitality -= 5
-        if rain:
-            self.Vitality += 5
-        else:
-            self.Vitality -= 3
-        if sunny:
-            self.Energy += 5
-        else:
-            self.Energy -= 3
-
-    def process_time(self):
-        self.Age += 1
-        if self.Age > self.Max_age:
+    def live(self,weather):
+        self.process_time()
+        self.process_weather(weather,True)
+        if self.Vitality < 1:
             self.Alive = False
 
-
+        if
 
 
 

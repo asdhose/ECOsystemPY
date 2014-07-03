@@ -28,4 +28,7 @@ class Beings:
         self.Age += 1
         if self.Age > self.Max_age:
             self.Alive = False
-
+        if self.Alive:
+            return True
+        else:
+            return False
