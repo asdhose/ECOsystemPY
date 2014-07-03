@@ -1,6 +1,6 @@
 __author__ = 'Jose Campos'
 from beings import Beings
-from random import randint as random
+
 
 
 class BasePlant(Beings):
@@ -22,7 +22,7 @@ class BasePlant(Beings):
             self.Energy += 5
         else:
             self.Energy -= 3
-            
+
 
 
 
