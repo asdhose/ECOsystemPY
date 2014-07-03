@@ -7,6 +7,7 @@ class BasePlant(Beings):
     def __init__(self):
         self.Weather_min = 10
         self.Weather_max = 40
+        self.Max_age = 100
 
     def process_weather(self,weather):
         temp = weather[0]
@@ -22,6 +23,11 @@ class BasePlant(Beings):
             self.Energy += 5
         else:
             self.Energy -= 3
+
+    def process_time(self):
+        self.Age += 1
+        if self.Age > self.Max_age:
+            self.Alive = False
 
 
 
