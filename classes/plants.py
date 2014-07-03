@@ -3,6 +3,7 @@ from beings import Beings
 
 
 
-class Plants(Beings):
+class BasePlant(Beings):
     
+
 
