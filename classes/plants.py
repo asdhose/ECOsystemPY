@@ -1,1 +1,8 @@
-__author__ = 'Paola'
+__author__ = 'Jose Campos'
+from beings import Beings
+
+
+
+class Plants(Beings):
+    
+
