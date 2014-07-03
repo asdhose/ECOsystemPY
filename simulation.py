@@ -10,9 +10,14 @@ for x in range(0,3):
 
 
 def start_simulation():
-    current_weather = weather.Weather.generate_weather()
-    for x in list():
-        x.live(current_weather)
+    y = weather.Weather()
+    current_weather = y.generate_weather()
+    for x in list:
+        if x.live(current_weather):
+            x.output_stats()
+
+        else:
+            list.remove(x)
 
 
 while True:

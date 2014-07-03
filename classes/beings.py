@@ -1,5 +1,6 @@
 __author__ = 'Paola'
 
+
 class Beings:
     def __init__(self):
         self.Vitality = 100

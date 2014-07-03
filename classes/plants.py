@@ -4,6 +4,7 @@ from beings import Beings
 
 class BasePlant(Beings):
     def __init__(self):
+        Beings.__init__(self)
         self.Weather_min = 10
         self.Weather_max = 40
         self.Max_age = 100
