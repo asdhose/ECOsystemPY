@@ -32,3 +32,6 @@ class Beings:
             return True
         else:
             return False
+
+    def output_stats(self):
+        print self.Age, self.Vitality, self.Energy
