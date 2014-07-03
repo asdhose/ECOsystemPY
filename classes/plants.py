@@ -15,8 +15,10 @@ class BasePlant(Beings):
         if self.Vitality < 1:
             self.Alive = False
 
-        if
-
+        if self.Alive:
+            return True
+        else:
+            return False
 
 
 
