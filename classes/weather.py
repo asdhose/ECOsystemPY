@@ -3,7 +3,7 @@ from random import randint as random
 
 class Weather:
     def __init__(self):
-        self.Temperature = 5
+        self.Temperature = 20
         self. Rain = False
         self.Sunny = False
 
